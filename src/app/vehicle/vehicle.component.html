@@ -1,0 +1,29 @@
+
+
+<div class="card" *ngFor="let vehicle of data.vehicles">
+  <label class="content">Model: {{ vehicle.modelCode }}</label>
+  <label class="content">Brand: {{ vehicle.brandName }}</label>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Brand</th>
+    <th scope="col">Model</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let lst of vehiclst.getAllVehicles">
+    <td></td>
+    <td>{{ lst.modelCode }}</td>
+    <td>{{ lst.brandName }}</td>
+  </tr>
+  </tbody>
+</table>
